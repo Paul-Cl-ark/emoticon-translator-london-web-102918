@@ -19,7 +19,7 @@ def get_japanese_emoticon(file_path, emoticon)
   trans["get_emoticon"].include?(emoticon) ? jap_emote : "Sorry, that emoticon was not found" 
 end
 
-def get_english_meaning
+def get_english_meaning(file_path, emoticon)
   trans = load_library(file_path)
   en_emote = trans["get_meaning"][emoticon]
   trans["get_meaning"].include?(emoticon) ? en_emote : "Sorry, that emoticon was not found" 
