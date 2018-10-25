@@ -13,7 +13,8 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
-  apology 
+  if
+  else puts "Sorry that emoticon was not found." 
 end
 
 def get_english_meaning
