@@ -11,10 +11,12 @@ def load_library(file_path)
   lolwtf
 end
 
+# because the english emoticon is the key to the japanese emoticon
+
 def get_japanese_emoticon(file_path, emoticon)
   trans = load_library(file_path)
-  jap_emoticon = trans["get_emoticon"][emoticon]
-  trans["get_emoticon"].include?(emoticon) ? jap_emoticon : "Sorry, that emoticon was not found" 
+  jap_emote = trans["get_emoticon"][emoticon]
+  trans["get_emoticon"].include?(emoticon) ? jap_emote : "Sorry, that emoticon was not found" 
 end
 
 def get_english_meaning
