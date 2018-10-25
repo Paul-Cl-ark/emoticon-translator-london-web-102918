@@ -12,10 +12,9 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  translator = load_library(file_path)
-  jap_emoticon = translator["get_emoticon"][emoticon]
-  translator["get_emoticon"].include?(emoticon) ? 
-  else puts "Sorry, that emoticon was not found" 
+  trans = load_library(file_path)
+  jap_emoticon = trans["get_emoticon"][emoticon]
+  trans["get_emoticon"].include?(emoticon) ? jap_emoticon : "Sorry, that emoticon was not found" 
 end
 
 def get_english_meaning
